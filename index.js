@@ -6,7 +6,7 @@ const fs = require('fs').promises
 
 async function run () {
   const host = core.getInput('host')
-  const port = core.getInput('port')
+  const port = +core.getInput('port')
   const path = core.getInput('path')
   const branch = core.getInput('branch')
   const token = core.getInput('token')
@@ -30,10 +30,10 @@ async function run () {
     }
   }))
   console.log('Uploading code')
-  await exec.exec('npx', ['screeps-api', 'upload', '--branch', branch, ...files])
+  // await exec.exec('npx', ['screeps-api', 'upload', '--branch', branch, ...files])
 }
 
 run().catch(error => {
-  console.error(error)
   core.setFailed(error.message)
+  console.error(error)
 })

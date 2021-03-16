@@ -38,6 +38,7 @@ None
 ```yaml
 uses: ags131/screeps-upload-action@v1.0.0
 with:
+  files: src/*
   host: server1.screepspl.us
   port: 443
   branch: ZeSwarm_v1.1
