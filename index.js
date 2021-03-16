@@ -30,7 +30,7 @@ async function run () {
     }
   }))
   console.log('Uploading code')
-  // await exec.exec('npx', ['screeps-api', 'upload', '--branch', branch, ...files])
+  await exec.exec('npx', ['screeps-api', 'upload', '--branch', branch, ...files])
 }
 
 run().catch(error => {
