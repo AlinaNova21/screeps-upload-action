@@ -1,6 +1,6 @@
 {
   "name": "screeps-upload-action",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "repository": "git@github.com:ags131/screeps-upload-action.git",
   "author": "Adam Shumann <ashumann13@gmail.com>",
