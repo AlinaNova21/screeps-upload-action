@@ -1,0 +1,42 @@
+name: 'Screeps'
+description: 'Uploads code to screeps servers'
+inputs:
+  files:
+    description: 'Files to upload'
+    required: true
+    default: 'dist/*'
+  host:
+    description: 'Hostname'
+    required: true
+    default: 'screeps.com'
+  port:
+    description: 'Port'
+    required: true
+    default: '443'
+  path:
+    description: 'Path'
+    required: true
+    default: '/'
+  branch:
+    description: 'Branch'
+    required: true
+    default: 'default'
+  token:
+    description: 'Token (Only for MMO)'
+    required: false
+    default: ''
+  username:
+    description: 'Username (Only for private servers)'
+    required: false
+    default: ''
+  password:
+    description: 'Password (Only for private servers)'
+    required: false
+    default: ''
+  
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'index.js'
