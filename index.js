@@ -1,6 +1,5 @@
 const core = require('@actions/core');
 const exec = require('@actions/exec');
-const github = require('@actions/github');
 const glob = require('@actions/glob');
 const YAML = require('yamljs')
 const fs = require('fs').promises
