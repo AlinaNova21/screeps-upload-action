@@ -22,6 +22,7 @@ async function run () {
       main: {
         host,
         port,
+        path,
         secure: port === 443,
         token,
         username,
